@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>La Palapa de Don Margaro | Mariscos, Puerto Pe&#241;asco, Sonora</title>
+  <meta name="description" content="Mariscos frescos estilo Sonora y Sinaloa en Puerto Pe&#241;asco. Aguachile, pescado zarandeado, camer&#243;n al mojo. 297 rese&#241;as en Google, 4.7 estrellas. Calle Miguel Hidalgo, Centro." />
+
+  <!-- Open Graph (og:url uses hyphens, og:image is ABSOLUTE URL) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://neonframewebdev.github.io/la-palapa-don-margaro/" />
+  <meta property="og:title" content="La Palapa de Don Margaro | Mariscos, Puerto Pe&#241;asco" />
+  <meta property="og:description" content="Aguachile, pescado zarandeado, camer&#243;n al mojo. Todo hecho al momento. 4.7 estrellas en Google. Calle Miguel Hidalgo, Puerto Pe&#241;asco, Sonora." />
+  <meta property="og:image" content="https://neonframewebdev.github.io/la-palapa-don-margaro/assets/hero_exterior_banner.jpg" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter Card (absolute URL) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="La Palapa de Don Margaro | Puerto Pe&#241;asco" />
+  <meta name="twitter:description" content="Mariscos frescos del Mar de Cort&#233;s. Estilo Sonora y Sinaloa. 4.7 estrellas en Google." />
+  <meta name="twitter:image" content="https://neonframewebdev.github.io/la-palapa-don-margaro/assets/hero_exterior_banner.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+
+  <!-- Fonts: Barlow Condensed + Source Sans 3 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Preload hero -->
+  <link rel="preload" as="image" href="assets/hero_exterior_banner.jpg" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======================================================= -->
+  <!-- Loader                                                   -->
+  <!-- ======================================================= -->
+  <div id="loader" role="status" aria-label="Cargando / Loading">
+    <img class="loader-logo" src="assets/logo.jpg" alt="La Palapa de Don Margaro" width="140" height="140" />
+    <div class="loader-bar-track" aria-hidden="true">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- ======================================================= -->
+  <!-- Nav                                                      -->
+  <!-- ======================================================= -->
+  <nav class="site-nav" role="navigation" aria-label="Navegaci&#243;n principal">
+    <a href="#hero" class="nav-logo" aria-label="La Palapa de Don Margaro inicio">
+      <img src="assets/logo.jpg" alt="" width="42" height="42" aria-hidden="true" />
+      <span class="nav-logo-text" data-full="LA PALAPA DE DON MARGARO">LA PALAPA</span>
+    </a>
+
+    <div class="nav-right">
+      <!-- Desktop links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#menu"
+               data-es="Mariscos"
+               data-en="Menu">Mariscos</a></li>
+        <li><a href="#story"
+               data-es="Nosotros"
+               data-en="About">Nosotros</a></li>
+        <li><a href="#contact"
+               data-es="Horarios"
+               data-en="Hours">Horarios</a></li>
+      </ul>
+
+      <!-- Language toggle -- always visible, never in drawer -->
+      <button type="button" class="lang-toggle" data-current="es"
+              aria-label="Switch to English">
+        <span class="lt-es">ES</span><span class="lt-sep">/</span><span class="lt-en">EN</span>
+      </button>
+
+      <!-- CTA pill (desktop) -->
+      <a href="tel:+526383836973" class="nav-cta"
+         data-es="Ll&#225;manos"
+         data-en="Call Us">Ll&#225;manos</a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="nav-hamburger" aria-label="Abrir men&#250;" aria-expanded="false" aria-controls="nav-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <nav class="nav-drawer" id="nav-drawer" aria-label="Men&#250; m&#243;vil">
+    <a href="#menu"
+       data-es="Mariscos"
+       data-en="Menu">Mariscos</a>
+    <a href="#story"
+       data-es="Nosotros"
+       data-en="About">Nosotros</a>
+    <a href="#contact"
+       data-es="Horarios"
+       data-en="Hours">Horarios</a>
+    <a href="tel:+526383836973" class="drawer-cta"
+       data-es="Ll&#225;manos"
+       data-en="Call Us">Ll&#225;manos</a>
+  </nav>
+
+  <!-- ======================================================= -->
+  <!-- Hero                                                     -->
+  <!-- ======================================================= -->
+  <section id="hero" aria-label="Hero">
+    <img
+      class="hero-img"
+      src="assets/hero_exterior_banner.jpg"
+      alt="Exterior de La Palapa de Don Margaro -- cartel rojo y azul con el nombre del restaurante, personal visible en el &#225;rea de preparaci&#243;n"
+      fetchpriority="high"
+      decoding="async"
+    />
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Puerto Pe&#241;asco, Sonora</p>
+
+      <h1 class="hero-h1"
+          data-es="Mariscos frescos. Mar de Cort&#233;s."
+          data-en="Fresh seafood. Sea of Cortez.">
+        Mariscos frescos. Mar de Cort&#233;s.
+      </h1>
+
+      <p class="hero-sub"
+         data-es="Aguachile, pescado zarandeado, camer&#243;n al mojo. Todo hecho al momento, en pleno Puerto Pe&#241;asco."
+         data-en="Aguachile, zarandeado, shrimp in broth. Everything made to order, right here in Puerto Pe&#241;asco.">
+        Aguachile, pescado zarandeado, camer&#243;n al mojo. Todo hecho al momento, en pleno Puerto Pe&#241;asco.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="tel:+526383836973" class="btn-primary"
+           data-es="Ll&#225;manos"
+           data-en="Call Us">Ll&#225;manos</a>
+        <a href="#menu" class="btn-secondary"
+           data-es="Ver el men&#250;"
+           data-en="See the Menu">Ver el men&#250;</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-cue" aria-hidden="true"></div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- Trust Bar                                                -->
+  <!-- ======================================================= -->
+  <div id="trust-bar" role="complementary" aria-label="Credenciales">
+    <div class="trust-item">
+      <strong>4.7</strong>
+      <span class="trust-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span data-es=" en Google" data-en=" on Google"> en Google</span>
+    </div>
+    <span class="trust-dot" aria-hidden="true">&#9679;</span>
+    <div class="trust-item">
+      <strong data-es="297 rese&#241;as" data-en="297 reviews">297 rese&#241;as</strong>
+    </div>
+    <span class="trust-dot" aria-hidden="true">&#9679;</span>
+    <div class="trust-item"
+         data-es="El cl&#225;sico del Centro"
+         data-en="A Centro Landmark">El cl&#225;sico del Centro</div>
+    <span class="trust-dot" aria-hidden="true">&#9679;</span>
+    <div class="trust-item">Miguel Hidalgo, Puerto Pe&#241;asco</div>
+  </div>
+
+  <!-- ======================================================= -->
+  <!-- Highlights                                               -->
+  <!-- ======================================================= -->
+  <section id="highlights" aria-labelledby="highlights-title">
+    <div class="section-header reveal">
+      <p class="section-label"
+         data-es="Lo que nos hace especiales"
+         data-en="What Makes Us Special">Lo que nos hace especiales</p>
+      <h2 class="section-title" id="highlights-title"
+          data-es="Tres razones para venir"
+          data-en="Three reasons to come">Tres razones para venir</h2>
+    </div>
+
+    <div class="highlights-grid">
+
+      <div class="highlight-card reveal">
+        <div class="highlight-icon" aria-hidden="true">
+          <!-- Fish / wave icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M2 16s2-4 7-4 7 4 7 4"/>
+            <path d="M16 16c2.5 0 5-2 6-4-1-2-3.5-4-6-4"/>
+            <circle cx="18.5" cy="12" r="1"/>
+          </svg>
+        </div>
+        <h3 class="highlight-title"
+            data-es="Mariscos frescos"
+            data-en="Fresh Catch">Mariscos frescos</h3>
+        <p class="highlight-body"
+           data-es="Pescado y camer&#243;n del d&#237;a, cocinado al momento."
+           data-en="Fresh fish and shrimp daily, cooked to order.">
+          Pescado y camer&#243;n del d&#237;a, cocinado al momento.
+        </p>
+      </div>
+
+      <div class="highlight-card reveal">
+        <div class="highlight-icon" aria-hidden="true">
+          <!-- Crown / star icon for signature dish -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M2 20h20"/>
+            <path d="M4 20l2-10 6 6 6-6 2 10"/>
+            <path d="M12 6l1.5-3 1.5 3"/>
+          </svg>
+        </div>
+        <h3 class="highlight-title"
+            data-es="La Torre de Don Margaro"
+            data-en="The Tower of Don Margaro">La Torre de Don Margaro</h3>
+        <p class="highlight-body"
+           data-es="La tostada insignia de la casa. Pide la Torre."
+           data-en="Our signature tostada. Ask for the Torre.">
+          La tostada insignia de la casa. Pide la Torre.
+        </p>
+      </div>
+
+      <div class="highlight-card reveal">
+        <div class="highlight-icon" aria-hidden="true">
+          <!-- Anchor / fishing hook icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="5" r="2"/>
+            <line x1="12" y1="7" x2="12" y2="20"/>
+            <path d="M7 20c0 2 2 3 5 3s5-1 5-3"/>
+            <path d="M5 10c0-3 3-5 7-5"/>
+          </svg>
+        </div>
+        <h3 class="highlight-title"
+            data-es="Tu pesca, nuestra cocina"
+            data-en="Your catch, our kitchen">Tu pesca, nuestra cocina</h3>
+        <p class="highlight-body"
+           data-es="Trae el pescado de tu excursi&#243;n y lo cocinamos."
+           data-en="Bring your fishing charter catch and we'll cook it for you.">
+          Trae el pescado de tu excursi&#243;n y lo cocinamos.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- Menu Highlights                                          -->
+  <!-- ======================================================= -->
+  <section id="menu" aria-labelledby="menu-title">
+    <div class="menu-inner">
+      <div class="section-header reveal">
+        <p class="section-label"
+           data-es="La cocina"
+           data-en="The kitchen">La cocina</p>
+        <h2 class="section-title" id="menu-title"
+            data-es="Lo que sale de la cocina"
+            data-en="What comes out of the kitchen">Lo que sale de la cocina</h2>
+      </div>
+
+      <div class="menu-grid reveal">
+
+        <!-- Seafood column -->
+        <div class="menu-col">
+          <h3 class="menu-col-title"
+              data-es="Especialidades del Mar"
+              data-en="From the Sea">Especialidades del Mar</h3>
+
+          <ul class="menu-items">
+
+            <li class="menu-item menu-item--featured">
+              <div class="menu-item-name">La Torre de Don Margaro</div>
+              <div class="menu-item-desc"
+                   data-es="La tostada de la casa. El platillo que le da nombre al lugar. P&#237;dela."
+                   data-en="The house tostada. The dish that gives the place its name. Order it.">
+                La tostada de la casa. El platillo que le da nombre al lugar. P&#237;dela.
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <div class="menu-item-name"
+                   data-es="Aguachile mixto (camer&#243;n y callo de hacha)"
+                   data-en="Aguachile mixto (shrimp and scallop)">Aguachile mixto (camer&#243;n y callo de hacha)</div>
+              <div class="menu-item-desc"
+                   data-es="Estilo Sinaloa. Camer&#243;n fresco y callo en leche de tigre, con pepino y cebolla morada."
+                   data-en="Sinaloa style. Fresh shrimp and callo de hacha in tiger's milk with cucumber and red onion.">
+                Estilo Sinaloa. Camer&#243;n fresco y callo en leche de tigre, con pepino y cebolla morada.
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <div class="menu-item-name">Aguachile blanco</div>
+              <div class="menu-item-desc"
+                   data-es="Pescado blanco en escabeche suave, pepino, aguacate. Limpio y fresco."
+                   data-en="White fish in a mild citrus cure, cucumber, avocado. Clean and cold.">
+                Pescado blanco en escabeche suave, pepino, aguacate. Limpio y fresco.
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <div class="menu-item-name">Ceviche</div>
+              <div class="menu-item-desc"
+                   data-es="Media orden MX$170. Pepino, cebolla, aguacate, lim&#243;n. La porci&#243;n es generosa, eso avisan los que ya vinieron."
+                   data-en="Half order MX$170. Cucumber, onion, avocado, lime. The portion is big; regulars warn you.">
+                Media orden MX$170. Pepino, cebolla, aguacate, lim&#243;n. La porci&#243;n es generosa, eso avisan los que ya vinieron.
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <div class="menu-item-name">Pescado zarandeado</div>
+              <div class="menu-item-desc"
+                   data-es="Pescado entero a las brasas, estilo Sinaloa. Con tortillas y salsas de la casa."
+                   data-en="Whole grilled fish, Sinaloa style. Comes with tortillas and house salsas.">
+                Pescado entero a las brasas, estilo Sinaloa. Con tortillas y salsas de la casa.
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <div class="menu-item-name"
+                   data-es="Pescado frito entero"
+                   data-en="Whole fried fish">Pescado frito entero</div>
+              <div class="menu-item-desc"
+                   data-es="Crujiente por fuera, jugoso por dentro. Con tortillas de ma&#237;z, col y pico de gallo."
+                   data-en="Crispy outside, tender inside. Corn tortillas, cabbage, pico de gallo.">
+                Crujiente por fuera, jugoso por dentro. Con tortillas de ma&#237;z, col y pico de gallo.
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <div class="menu-item-name"
+                   data-es="Tacos de camer&#243;n y de pescado"
+                   data-en="Shrimp and fish tacos">Tacos de camer&#243;n y de pescado</div>
+              <div class="menu-item-desc"
+                   data-es="Los imprescindibles. Col, pico, aguacate, lim&#243;n."
+                   data-en="The staples. Cabbage, pico, avocado, lime.">
+                Los imprescindibles. Col, pico, aguacate, lim&#243;n.
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <div class="menu-item-name"
+                   data-es="Camer&#243;n al mojo"
+                   data-en="Shrimp in broth (camer&#243;n al mojo)">Camer&#243;n al mojo</div>
+              <div class="menu-item-desc"
+                   data-es="Camer&#243;n entero con concha, en caldo de chile rojo. Con caguama fr&#237;a al lado."
+                   data-en="Whole shell-on shrimp in a red chile broth. Have a cold beer ready.">
+                Camer&#243;n entero con concha, en caldo de chile rojo. Con caguama fr&#237;a al lado.
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <div class="menu-item-name"
+                   data-es="C&#243;ctel de camer&#243;n"
+                   data-en="Shrimp cocktail">C&#243;ctel de camer&#243;n</div>
+              <div class="menu-item-desc"
+                   data-es="En copa, con aguacate, catsup, lim&#243;n, chiltep&#237;n y tostadas."
+                   data-en="Served in a goblet with avocado, tomato, lime, chiltepin, and chips.">
+                En copa, con aguacate, catsup, lim&#243;n, chiltep&#237;n y tostadas.
+              </div>
+            </li>
+
+          </ul>
+
+          <!-- Camaron mojo photo at bottom of seafood column (desktop) -->
+          <div class="menu-photo-wrap">
+            <img
+              src="assets/menu_camaron_mojo.jpg"
+              alt="Cazer&#243;n de barro con camer&#243;n entero al mojo en caldo rojo, con Michelob Ultra al lado"
+              loading="lazy"
+              class="menu-photo"
+            />
+          </div>
+
+          <p class="menu-footnote"
+             data-es="Men&#250; completo en el restaurante. Los precios pueden variar."
+             data-en="Full menu at the restaurant. Prices may vary.">
+            Men&#250; completo en el restaurante. Los precios pueden variar.
+          </p>
+        </div>
+
+        <!-- Drinks / bites column -->
+        <div class="menu-col">
+          <h3 class="menu-col-title"
+              data-es="Para Acompa&#241;ar"
+              data-en="To Go With It">Para Acompa&#241;ar</h3>
+
+          <ul class="menu-items">
+
+            <li class="menu-item menu-item--featured">
+              <div class="menu-item-name"
+                   data-es="Micheladas en vaso de barro"
+                   data-en="Micheladas in clay cups">Micheladas en vaso de barro</div>
+              <div class="menu-item-desc"
+                   data-es="Con naranja, lim&#243;n, sal y tu cerveza de elecci&#243;n. El vaso de barro llega a la mesa como lleva llegando desde que el lugar abri&#243;."
+                   data-en="Orange, lime, salt, your choice of beer. The clay cup has been on these tables since day one.">
+                Con naranja, lim&#243;n, sal y tu cerveza de elecci&#243;n. El vaso de barro llega a la mesa como lleva llegando desde que el lugar abri&#243;.
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <div class="menu-item-name">Cantarito</div>
+              <div class="menu-item-desc"
+                   data-es="C&#243;ctel c&#237;trico estilo Jalisco en vaso de barro."
+                   data-en="Jalisco-style citrus cocktail in a clay cup.">
+                C&#243;ctel c&#237;trico estilo Jalisco en vaso de barro.
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <div class="menu-item-name"
+                   data-es="Margaritas y cantaritos"
+                   data-en="Margaritas and cantaritos">Margaritas y cantaritos</div>
+              <div class="menu-item-desc"
+                   data-es="C&#237;tricos frescos, buenos tragos."
+                   data-en="Fresh citrus, strong pours.">
+                C&#237;tricos frescos, buenos tragos.
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <div class="menu-item-name"
+                   data-es="Cerveza"
+                   data-en="Beer">Cerveza</div>
+              <div class="menu-item-desc">
+                Michelob Ultra, Victoria.
+              </div>
+            </li>
+
+            <li class="menu-item menu-item--featured">
+              <div class="menu-item-name"
+                   data-es="Tu pesca del d&#237;a"
+                   data-en="Your fishing charter catch">Tu pesca del d&#237;a</div>
+              <div class="menu-item-desc"
+                   data-es="Si vienes de un charter de pesca, trae tu captura. La cocinamos nosotros."
+                   data-en="Caught something today? Bring it in. We'll cook it.">
+                Si vienes de un charter de pesca, trae tu captura. La cocinamos nosotros.
+              </div>
+            </li>
+
+          </ul>
+
+          <!-- Coctel photo at bottom of drinks column (desktop) -->
+          <div class="menu-photo-wrap">
+            <img
+              src="assets/menu_coctel.jpg"
+              alt="C&#243;ctel de camer&#243;n en copa de margarita con aguacate, chips y lim&#243;n, ambiente de bar al fondo"
+              loading="lazy"
+              class="menu-photo"
+            />
+          </div>
+        </div>
+
+      </div><!-- /.menu-grid -->
+    </div><!-- /.menu-inner -->
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- Story / About                                            -->
+  <!-- ======================================================= -->
+  <section id="story" aria-labelledby="story-title">
+    <div class="story-inner">
+      <div class="section-header reveal">
+        <p class="section-label"
+           data-es="El coraz&#243;n del lugar"
+           data-en="The heart of the place">El coraz&#243;n del lugar</p>
+        <h2 class="section-title" id="story-title"
+            data-es="La casa que Don Margaro abri&#243;"
+            data-en="The house Don Margaro built">La casa que Don Margaro abri&#243;</h2>
+      </div>
+
+      <div class="story-layout">
+        <div class="story-text-block reveal">
+          <p data-es="Don Margaro nos abri&#243; las puertas hace a&#241;os, aqu&#237; en la calle Hidalgo. Hoy, Abdiel lleva adelante esa misma cocina: mariscos estilo Sonora y Sinaloa, hechos con calidad, servidos con atenci&#243;n."
+             data-en="Don Margaro opened these doors years ago, right here on Calle Hidalgo. Today, Abdiel runs the same kitchen: Sonora and Sinaloa-style mariscos, made right, served with care.">
+            Don Margaro nos abri&#243; las puertas hace a&#241;os, aqu&#237; en la calle Hidalgo. Hoy, Abdiel lleva adelante esa misma cocina: mariscos estilo Sonora y Sinaloa, hechos con calidad, servidos con atenci&#243;n.
+          </p>
+          <p data-es="Nada de congelados. Todo lo que pides sale del comal o del caldo al momento. Si vienes con tu pesca del d&#237;a, Abdiel te la prepara."
+             data-en="No frozen anything. Every order comes off the griddle or out of the broth fresh. Caught something on your charter today? Abdiel will cook it for you.">
+            Nada de congelados. Todo lo que pides sale del comal o del caldo al momento. Si vienes con tu pesca del d&#237;a, Abdiel te la prepara.
+          </p>
+          <p data-es="M&#225;s de 297 opiniones en Google. 4.7 estrellas. Cero p&#225;gina web, hasta ahora."
+             data-en="Over 297 Google reviews. 4.7 stars. Zero website, until now.">
+            M&#225;s de 297 opiniones en Google. 4.7 estrellas. Cero p&#225;gina web, hasta ahora.
+          </p>
+        </div>
+
+        <div class="story-img-wrap reveal">
+          <img
+            src="assets/story_interior.jpg"
+            alt="Familia de 6-7 personas cenando bajo el techo de palapa, TV con partido de f&#250;tbol al fondo, ambiente relajado"
+            loading="lazy"
+            class="story-img"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- Reviews                                                  -->
+  <!-- ======================================================= -->
+  <section id="reviews" aria-labelledby="reviews-title">
+    <div class="section-header reveal">
+      <p class="section-label"
+         data-es="Lo que dicen los que vienen"
+         data-en="What people say">Lo que dicen los que vienen</p>
+      <h2 class="section-title" id="reviews-title"
+          data-es="4.7 estrellas en Google"
+          data-en="4.7 Stars on Google">4.7 estrellas en Google</h2>
+    </div>
+
+    <div class="reviews-grid">
+
+      <!-- Review 1: Sue Lemon (English source, no toggle needed -- same message) -->
+      <div class="review-card reveal">
+        <div class="review-stars" aria-label="5 estrellas / 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote class="review-quote">
+          "Absolutely amazing food and service. Just left and looking forward to going back. We had shrimp tacos and three whole fried fish, fresh cocktails of the days. Everything was exceptional!!! Local spot and a hidden gem for us Americanos!!"
+        </blockquote>
+        <p class="review-author">Sue Lemon</p>
+        <p class="review-source">Google</p>
+      </div>
+
+      <!-- Review 2: Luke Richter (English source, static) -->
+      <div class="review-card reveal">
+        <div class="review-stars" aria-label="5 estrellas / 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote class="review-quote">
+          "Absolutely fantastic! This is the best of Mexico. We all had the whole fried fish. Amazing and delicious!"
+        </blockquote>
+        <p class="review-author">Luke Richter</p>
+        <p class="review-source">Google</p>
+      </div>
+
+      <!-- Review 3: David Beltran (Spanish source -- stays in Spanish, local voice) -->
+      <div class="review-card reveal">
+        <div class="review-stars" aria-label="5 estrellas / 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote class="review-quote">
+          "Servicio y atenci&#243;n excelente del personal. Lugar semi-abierto al aire libre, comida muy variada, muy buena. Los precios, por debajo de muchos restaurantes."
+        </blockquote>
+        <p class="review-author">David Beltran</p>
+        <p class="review-source">Google</p>
+      </div>
+
+    </div>
+
+    <div class="reviews-aggregate reveal">
+      <span class="aggregate-number">4.7</span>
+      <span class="aggregate-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="aggregate-label"
+            data-es="en Google &#8211; 297 rese&#241;as"
+            data-en="on Google &#8211; 297 reviews">en Google &#8211; 297 rese&#241;as</span>
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- Contact & Hours                                          -->
+  <!-- ======================================================= -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="contact-inner">
+      <div class="section-header reveal">
+        <p class="section-label"
+           data-es="D&#243;nde encontrarnos"
+           data-en="Find us">D&#243;nde encontrarnos</p>
+        <h2 class="section-title" id="contact-title"
+            data-es="Vis&#237;tanos"
+            data-en="Visit Us">Vis&#237;tanos</h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left: info -->
+        <div class="contact-info reveal">
+          <p class="contact-name">La Palapa de Don Margaro</p>
+          <p class="contact-address">
+            Calle Miguel Hidalgo y Av. Los Naranjos<br />
+            (entre Naranjo y &#193;lamos), Centro<br />
+            Puerto Pe&#241;asco, Sonora, M&#233;xico
+          </p>
+
+          <a href="tel:+526383836973" class="contact-phone">+52 638 383 6973</a>
+          <p class="contact-phone-alt"
+             data-es="N&#250;mero alternativo: +52 638 688 2587"
+             data-en="Alternate number: +52 638 688 2587">N&#250;mero alternativo: +52 638 688 2587</p>
+
+          <p class="contact-note"
+             data-es="Solo entramos. Sin reservaciones, sin plataformas. Si tienes dudas, llama."
+             data-en="Walk-ins only. No reservations, no apps. Questions? Call us.">
+            Solo entramos. Sin reservaciones, sin plataformas. Si tienes dudas, llama.
+          </p>
+
+          <!-- Hours table -->
+          <table class="hours-table" aria-label="Horario / Hours">
+            <tbody>
+              <tr>
+                <th scope="row"
+                    data-es="Lun &#8211; Mar"
+                    data-en="Mon &#8211; Tue">Lun &#8211; Mar</th>
+                <td data-es="12:00 &#8211; 20:00"
+                    data-en="12PM &#8211; 8PM">12:00 &#8211; 20:00</td>
+              </tr>
+              <tr class="closed">
+                <th scope="row"
+                    data-es="Mi&#233;rcoles"
+                    data-en="Wednesday">Mi&#233;rcoles</th>
+                <td data-es="CERRADO"
+                    data-en="CLOSED">CERRADO</td>
+              </tr>
+              <tr>
+                <th scope="row"
+                    data-es="Jue &#8211; S&#225;b"
+                    data-en="Thu &#8211; Sat">Jue &#8211; S&#225;b</th>
+                <td data-es="12:00 &#8211; 20:00"
+                    data-en="12PM &#8211; 8PM">12:00 &#8211; 20:00</td>
+              </tr>
+              <tr>
+                <th scope="row"
+                    data-es="Domingo"
+                    data-en="Sunday">Domingo</th>
+                <td data-es="12:00 &#8211; 20:00"
+                    data-en="12PM &#8211; 8PM">12:00 &#8211; 20:00</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="hours-footnote"
+             data-es="Cocina hasta las 7:30 PM &#8211; todo se hace al momento."
+             data-en="Kitchen until 7:30 PM &#8211; everything is made to order.">
+            Cocina hasta las 7:30 PM &#8211; todo se hace al momento.
+          </p>
+
+          <p class="contact-note"
+             data-es="Estacionamiento gratuito en la calle. Acceso para silla de ruedas. Hay juegos para los ni&#241;os."
+             data-en="Free street parking. Wheelchair accessible. Kids' games on site.">
+            Estacionamiento gratuito en la calle. Acceso para silla de ruedas. Hay juegos para los ni&#241;os.
+          </p>
+
+          <!-- Social -->
+          <div class="contact-social">
+            <a href="https://facebook.com/palapa.donmargaro" target="_blank" rel="noopener noreferrer"
+               aria-label="La Palapa de Don Margaro en Facebook" class="social-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com/palapa.donmargaro" target="_blank" rel="noopener noreferrer"
+               aria-label="La Palapa de Don Margaro en Instagram" class="social-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: map -->
+        <div class="contact-map reveal">
+          <iframe
+            title="La Palapa de Don Margaro en Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.0!2d-113.5369!3d31.3051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86a285a0a0a0a0a1%3A0x1a2b3c4d5e6f7a8b!2sCalle%20Miguel%20Hidalgo%2C%20Puerto%20Pe%C3%B1asco%2C%20Son.%2C%20Mexico!5e0!3m2!1ses!2smx!4v1"
+            width="100%"
+            height="340"
+            style="border:0;border-radius:10px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div><!-- /.contact-grid -->
+    </div><!-- /.contact-inner -->
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- Footer                                                   -->
+  <!-- ======================================================= -->
+  <footer id="footer">
+    <div class="footer-inner">
+
+      <div class="footer-col footer-brand">
+        <a href="#hero" class="footer-logo-link" aria-label="La Palapa de Don Margaro inicio">
+          <img src="assets/logo.jpg" alt="La Palapa de Don Margaro logo" width="36" height="36" />
+          <span class="footer-logo-text">LA PALAPA DE DON MARGARO</span>
+        </a>
+        <p class="footer-tagline"
+           data-es="Servicio y Calidad nos distingue."
+           data-en="Service and quality, that's what sets us apart.">Servicio y Calidad nos distingue.</p>
+      </div>
+
+      <div class="footer-col footer-social-col">
+        <div class="footer-social-icons">
+          <a href="https://facebook.com/palapa.donmargaro" target="_blank" rel="noopener noreferrer"
+             aria-label="Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com/palapa.donmargaro" target="_blank" rel="noopener noreferrer"
+             aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+        </div>
+        <p class="footer-mariscos">Mariscos y M&#225;s...</p>
+        <p class="footer-tagline"
+           data-es="Mar de Cort&#233;s, de mediod&#237;a al atardecer. Mi&#233;rcoles cerrado."
+           data-en="Sea of Cortez, midday to sunset. Closed Wednesdays.">Mar de Cort&#233;s, de mediod&#237;a al atardecer. Mi&#233;rcoles cerrado.</p>
+      </div>
+
+      <div class="footer-col footer-contact-col">
+        <p class="footer-address">Calle Miguel Hidalgo, Puerto Pe&#241;asco, Sonora</p>
+        <a href="tel:+526383836973" class="contact-phone" style="font-size:1rem;margin-bottom:0.4rem;display:inline-block;">+52 638 383 6973</a>
+        <p class="footer-copy">&#169; 2026 La Palapa de Don Margaro.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
